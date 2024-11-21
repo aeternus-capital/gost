@@ -1,0 +1,19 @@
+{
+    "name": "@aeternus/gost",
+    "version": "0.1.0",
+    "exports": "./src/_.ts",
+    "tasks": {
+        "test": "deno test ./src",
+        "lint": "deno doc --lint ./src/_.ts"
+    },
+    "publish": {
+        "include": [
+            "src/**/*.ts",
+            "LICENSE",
+            "README.md"
+        ],
+        "exclude": [
+            "src/**/*.test.ts"
+        ]
+    }
+}
