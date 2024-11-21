@@ -1,4 +1,6 @@
 # ГОСТ-алгоритмы
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faeternus-capital%2Fgost.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Faeternus-capital%2Fgost?ref=badge_shield)
+
 Реализация для TypeScript/JavaScript.
 
 ## Как установить?
@@ -11,3 +13,7 @@
 
 ## Лицензия
 [MIT License](LICENSE) © 2024, Stepan Novozhilov
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faeternus-capital%2Fgost.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Faeternus-capital%2Fgost?ref=badge_large)
