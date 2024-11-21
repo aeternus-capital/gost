@@ -328,9 +328,11 @@ class GOST3411Hash {
         const msgLen: Uint8Array = new Uint8Array(4);
         for (let i = 0; i < 4; i++) msgLen[i] = (msg.length * 8 >> i * 8) & 255;
 
-        h = GN(n, h, paddedMsg);
-        n = addMod512(n, msgLen.reverse());
-        h = GN(new Uint8Array(64), GN(new Uint8Array(64), h, n), addMod512(sigma, paddedMsg));
+        h = GN(
+            new Uint8Array(64),
+            GN(new Uint8Array(64), GN(n, h, paddedMsg), addMod512(n, msgLen.reverse())),
+            addMod512(sigma, paddedMsg),
+        );
 
         if (this.size === 512) {
             return h;
